@@ -11,7 +11,7 @@ Useful for some tools that may only accept one or another
 
 2. Run like:
 
-`./cidr2mask.o 24`
+`./cidr2mask.o <cidr>` e.g. `./cidr2mask.o 24`
 
 3. Output:
 
