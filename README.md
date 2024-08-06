@@ -28,7 +28,7 @@ Or alternatively use awk, xargs and tail, e.g.:
 ```
  ./cidr2mask.o 24 | tail -1 |  awk -F ': ' '{print $2}') >> somefile
 ```
-or e.g. use it with subnetter
+or e.g. use it with [subnetter](https://github.com/Lyssers/subnetter)
 ```
  echo $(ifconfig wlan0 | grep 'inet' | head -1 | awk -F ' ' '{print $2}')  $(cidr2mask 24 | tail -1 |  awk -F ': ' '{print $2}') | xargs subnetter 
 ```
