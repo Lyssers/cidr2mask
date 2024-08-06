@@ -20,6 +20,7 @@ Binary Subnet Mask: 11111111111111111111111100000000
 Decimal Subnet Mask: 4294967040
 Subnet Mask in Dotquad: 255.255.255.0
 ```
+(Optional) `sudo cp ./cidr2mask.o /usr/bin/cidr2mask` to run it using just `cidr2mask`
 
 The output is very verbose by default, if you'd like a less verbose mode open an issue and I can do it!
 
