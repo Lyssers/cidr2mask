@@ -27,7 +27,6 @@ Or alternatively use awk, xargs and tail, e.g.:
 
 ```
  ./cidr2mask.o 24 | tail -1 |  awk -F ': ' '{print $2}') >> somefile
-
 ```
 or e.g. use it with subnetter
 ```
