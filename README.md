@@ -1,4 +1,4 @@
-# CIDR 2 MASK
+# CIDR Range to Dotquad Subnet Mask Converter
 Converts a CIDR range into a subnet mask e.g. from 24 to 255.255.255.0
 
 Useful for some tools that may only accept one or another
