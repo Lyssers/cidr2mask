@@ -19,3 +19,15 @@ Decimal Subnet Mask: 4294967040
 Subnet Mask in Dotquad: 255.255.255.0
 ```
 
+The output is very verbose by default, if you'd like a less verbose mode open an issue and I can do it!
+
+Or alternatively use awk, xargs and tail, e.g.:
+
+```
+ ./cidr2mask.o 24 | tail -1 |  awk -F ': ' '{print $2}') >> somefile
+
+```
+or e.g. use it with subnetter
+```
+ echo $(ifconfig wlan0 | grep 'inet' | head -1 | awk -F ' ' '{print $2}')  $(cidr2mask 24 | tail -1 |  awk -F ': ' '{print $2}') | xargs subnetter 
+```
