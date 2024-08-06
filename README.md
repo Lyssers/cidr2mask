@@ -22,7 +22,7 @@ Subnet Mask in Dotquad: 255.255.255.0
 ```
 (Optional) `sudo cp ./cidr2mask.o /usr/bin/cidr2mask` to run it using just `cidr2mask`
 
-The output is very verbose by default, if you'd like a less verbose mode open an issue and I can do it!
+The output is very verbose by default, which works for my needs, if you'd like a less verbose mode open an issue and I can do it!
 
 Or alternatively use awk, xargs and tail, e.g.:
 
